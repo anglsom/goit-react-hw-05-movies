@@ -5,4 +5,8 @@ export const ContainerOne = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 10px 30px;
+  border: 2px;
+  border-radius: 30%;
+  justify-content: center;
+  text-align: center;
 `;

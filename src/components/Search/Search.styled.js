@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   padding: 7px 10px;
-  background-color: skyblue;
+  background-color: plum;
   color: black;
   border: none;
   &:hover {
-    background-color: #2196f3;
+    background-color: pink;
     color: white;
   }
 `;

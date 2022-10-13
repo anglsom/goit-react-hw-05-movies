@@ -14,6 +14,6 @@ export const FilmListItem = styled.li`
 export const FilmLink = styled(Link)`
   color: black;
   &:hover {
-    color: skyblue;
+    color: pink;
   }
 `;

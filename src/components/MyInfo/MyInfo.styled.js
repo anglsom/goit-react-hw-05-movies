@@ -9,6 +9,6 @@ export const Navigation = styled(NavLink)`
   color: #2a363b;
   font-size: 16px;
   &.active {
-    color: skyblue;
+    color: plum;
   }
 `;

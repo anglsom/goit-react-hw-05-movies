@@ -14,13 +14,13 @@
 //     </div>
 //   );
 // };
-import  lazy  from 'react';
+import { lazy } from 'react';
 import { Route, Routes }  from 'react-router-dom';
 import Layout from './Layout';
 import NotFoundPage from '../page/NotPage';
 
 
-const HomePage = lazy(() => import('../page/Home'));
+const Home = lazy(() => import('../page/Home'));
 const Movies = lazy(() => import('../page/Movies'));
 const Details = lazy(() => import('../page/Details'));
 const Cast = lazy(() => import('../page/Cast'));
@@ -31,7 +31,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
+        <Route index element={<Home />} />
         <Route path="movies" element={<Movies />} />
         <Route path="movies/:movieId" element={<Details />}>
           <Route path="cast" element={<Cast />} />
