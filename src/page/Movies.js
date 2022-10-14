@@ -3,6 +3,7 @@ import Search from 'components/Search';
 import * as API from '../service/api';
 import Film from 'components/Film';
 import { useSearchParams } from 'react-router-dom';
+import Loader from 'components/Loader';
 
 export default function Movies() {
   let [searchParams] = useSearchParams({});
@@ -31,6 +32,8 @@ export default function Movies() {
     <>
       <Search />
       {movies && <Film movies={movies} />}
+       {loading && <Loader />}
+      {error && <h2>Oops, something went wrong...</h2>}
     </>
   );
 }
