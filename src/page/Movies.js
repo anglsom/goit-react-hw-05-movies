@@ -13,8 +13,15 @@ export default function Movies() {
 
   useEffect(() => {
     if (query === '') {
-       
       return;
+    }
+    if (query.length === 0) {
+
+        toast.info('Nothing found 🙄', {
+          autoClose: 2000,
+        });
+        navigate('/movies');
+        return;
     }
     API.getMovieByQuery(query).then(({ results }) => {
       const moviesArr = results.map(
@@ -28,11 +35,6 @@ export default function Movies() {
       setMovies(moviesArr);
     });
   }, [query]);
-if (moviesArr.length === 0) {
-        toast.info('Nothing found 🙄', {
-          autoClose: 2000,
-        });
-        navigate('/movies');
   return (
     <>
       <Search />
