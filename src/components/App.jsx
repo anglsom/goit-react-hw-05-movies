@@ -23,8 +23,8 @@ import NotFoundPage from '../page/NotPage';
 const Home = lazy(() => import('../page/Home'));
 const Movies = lazy(() => import('../page/Movies'));
 const Details = lazy(() => import('../page/Details'));
-const Cast = lazy(() => import('../page/Cast'));
-const Reviews = lazy(() => import('../page/Reviews'));
+const Cast = lazy(() => import('./Cast'));
+const Reviews = lazy(() => import('./Reviews'));
 
 
 export default function App() {

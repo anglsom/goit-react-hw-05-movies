@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
 import Search from 'components/Search';
 import * as API from '../service/api';
 import Film from 'components/Film';
-
 import { useSearchParams } from 'react-router-dom';
 
 export default function Movies() {
@@ -33,8 +31,6 @@ export default function Movies() {
     <>
       <Search />
       {movies && <Film movies={movies} />}
-
-      <Outlet />
     </>
   );
 }
