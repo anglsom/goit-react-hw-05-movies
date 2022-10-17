@@ -6,10 +6,10 @@ export default function MyInfo({ backLocation }) {
     <>
       <hr />
       <h4>Additional information</h4>
-      <Navigation to={`cast`} state={{ backLocation }}>
+      <Navigation to={'cast'} state={{ backLocation }}>
         Cast
           </Navigation>
-      <Navigation to={`reviews`} state={{ backLocation }}>
+      <Navigation to={'reviews'} state={{ backLocation }}>
         Reviews
       </Navigation>
     </>

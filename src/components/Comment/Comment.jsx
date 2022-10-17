@@ -16,11 +16,11 @@ export default function Comment({ reviews }) {
 }
 
 Comment.propTypes = {
-  cast: PropTypes.arrayOf(
+  reviews: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       author: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
 };
